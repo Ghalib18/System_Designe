@@ -57,6 +57,10 @@ public abstract class Order {
         }
     }
 
+    public List<MenuItem> getMenu(){
+        return items;
+    }
+
     public void setPayment(Payment p){
         payment=p;
     }
@@ -69,6 +73,9 @@ public abstract class Order {
 
     public void setSchedule(String sch){
         schedule=sch;
+    }
+    public String getSchedule(){
+        return schedule;
     }
     public void paymentService(){
         if(payment!=null){
